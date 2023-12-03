@@ -1,0 +1,4 @@
+baseURL = 'http://supermodel3.com/'
+languageCode = 'en-us'
+title = 'Supermodel'
+theme = 'basic'
