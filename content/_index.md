@@ -1,6 +1,5 @@
 ---
 title: "Home"
-draft: false
 ---
 
 # Supermodel

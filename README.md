@@ -36,7 +36,7 @@ hugo new content games/<game_title>.md
 To build and serve the site locally do:
 
 ```shell
-hugo server --buildDrafts
+hugo server
 ```
 
 [(back to top)](#table-of-contents)

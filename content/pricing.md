@@ -1,4 +1,3 @@
 ---
 title: "Pricing"
-draft: false
 ---

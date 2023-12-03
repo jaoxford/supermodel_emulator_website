@@ -1,4 +1,3 @@
 ---
 title: "Download"
-draft: false
 ---
