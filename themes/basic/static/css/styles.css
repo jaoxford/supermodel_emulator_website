@@ -98,7 +98,7 @@ h2 {
 
 nav,
 footer {
-  background-color: #f060a0;
+  background-color: var(--supermodel_pink);
   text-align: center;
 }
 
@@ -126,7 +126,7 @@ footer {
 }
 
 footer small {
-  color: #fff;
+  color: white;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -150,7 +150,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 nav ul li a:hover {
