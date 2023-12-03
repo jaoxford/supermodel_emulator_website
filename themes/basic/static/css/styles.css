@@ -1,0 +1,191 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+/*img, */
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+  10. Reset padding
+*/
+
+menu,
+ol,
+ul {
+  padding: 0;
+}
+
+/* Custom CSS here */
+
+/* CSS Variables */
+:root {
+  --supermodel_pink: #f060a0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: var(--supermodel_pink);
+}
+
+nav,
+footer {
+  background-color: #f060a0;
+  text-align: center;
+}
+
+nav .logo {
+  height: 4rem;
+  width: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 9999px;
+}
+
+nav .social_icon {
+  height: 2rem;
+  width: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  min-height: 3rem;
+}
+
+footer small {
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul li {
+  flex: 1;
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  filter: opacity(70%);
+}
+
+.content {
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    min-height: 6rem;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav,
+  footer {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .content {
+    padding: 1rem 10rem;
+  }
+}
+
+.index_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+}
+
+/* Custom CSS End */
