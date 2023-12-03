@@ -27,19 +27,49 @@ To build this project from scratch you'll need to [install hugo](https://gohugo.
 
 ## Usage
 
+### Blog posts
+
+To add a new blog post :
+
+```shell
+hugo new content blog/<blog_post_title>.md
+```
+
+This will generate a blog post based on the `blog.md` archetype in the `archetypes` directory.
+The generated blog post will be located in the `content/blog/` directory
+
+### Game Compatibility
+
 To add a new page regarding game compatibility do:
 
 ```shell
-hugo new content games/<game_title>.md
+hugo new content compatibility/<game_title>.md
 ```
+
+This will generate a game compatibility page based on the `compatibility.md` archetype in the `archetypes` directory.
+The generated compatibility page will be located in the `content/compatibility/` directory
+
+### Building Locally
 
 To build and serve the site locally do:
 
 ```shell
-hugo server
+hugo server --noHTTPCache
 ```
 
+The `--noHTTPCache` option is useful since you'll be reloading the site, and preventing HTTP caching is useful when there are multiple reloads happening.
+
 [(back to top)](#table-of-contents)
+
+### Building for a Website
+
+To generate the outputs for the actual website you'll need to run a different command:
+
+```shell
+hugo
+```
+
+This will generate everything into the `public/` directory. Which can then be transferred into the hosting / web server.
 
 ## Contributing
 
